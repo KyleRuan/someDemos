@@ -30,7 +30,7 @@ class MaskView: UIView {
         super.init(frame: frame)
         let path = UIBezierPath(rect: frame)
         maskLayer.path = path.CGPath
-        maskLayer.frame = frame
+//        maskLayer.frame = frame
         
     
     backgroundImageView.frame = CGRectMake(0, self.bounds.width/2, kImageViewWidth, kImageViewHeight)
@@ -62,11 +62,12 @@ class MaskView: UIView {
         animation.toValue = toPath
         animation.removedOnCompletion = false
         animation.duration = 5
+        animation.fillMode = kCAFillModeForwards
         maskLayer.removeAllAnimations()
         maskLayer.path = fromPath
         maskLayer.speed = 1
         maskLayer.addAnimation(animation, forKey: "maskAnimation")
-        maskLayer.path = toPath
+//        maskLayer.path = toPath
     }
     
     func pauseAnimation(){
