@@ -16,12 +16,14 @@ class TasksViewController: UIViewController {
     var openTasks : Results<Task>!
     var completedTasks : Results<Task>!
     var currentCreateAction:UIAlertAction!
-    
     var isEditingMode = false
+    
+    
+
     override func viewDidLoad() {
         super.viewDidLoad()
      
-
+      
         // Do any additional setup after loading the view.
     }
     
@@ -178,6 +180,8 @@ extension TasksViewController:UITableViewDelegate,UITableViewDataSource{
             else{
                 taskToBeDeleted = self.completedTasks[indexPath.row]
             }
+            
+          
            try! uiRealm.write({ () -> Void in
                uiRealm.delete(taskToBeDeleted)
             self.updateUI()

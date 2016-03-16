@@ -11,21 +11,41 @@ import RealmSwift
 
 class TasksListViewController: UIViewController {
 
-    var lists:Results<TaskList>!
+    var resultsList:Results<TaskList>!
     
     var isEditingMode = false
     
     var currentCreateAction:UIAlertAction!
+    
+    let token = uiRealm.addNotificationBlock({ (notification, realm) -> Void in
+        print("THIS IS A  NOTIFICATION")
+    })
+    
+    
     @IBOutlet weak var taskListsTableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        print(uiRealm.path)
         
+     var config = Realm.Configuration()
+        config.path = NSURL.fileURLWithPath(config.path!).URLByDeletingLastPathComponent?.URLByAppendingPathComponent("kyle.realm").path
+        
+        
+        
+        let zz = try! Realm(configuration: config)
+        let path = NSURL.fileURLWithPath(uiRealm.path).URLByDeletingLastPathComponent?.URLByAppendingPathComponent("zz.realm").path
+        print(path)
+       try! zz.writeCopyToPath(path!)
+        print(zz.path)
+        print(uiRealm.path)
+    
       
         // Do any additional setup after loading the view.
     }
     
-
+    override func viewDidDisappear(animated: Bool) {
+        super.viewDidDisappear(animated)
+//        token.stop()
+    }
     @IBAction func didClickOnEditButton(sender: AnyObject) {
          isEditingMode = !isEditingMode
         self.taskListsTableView.setEditing(isEditingMode, animated: true )
@@ -90,10 +110,17 @@ class TasksListViewController: UIViewController {
          updateUI()
     }
     
+    
     func updateUI(){
-         lists = uiRealm.objects(TaskList)
+//        uiRealm.addNotificationBlock(<#T##block: NotificationBlock##NotificationBlock##(notification: Notification, realm: Realm) -> Void#>)
+      
+        resultsList = uiRealm.objects(TaskList)
+        
+        
+      
          self.taskListsTableView.setEditing(false , animated: true)
          self.taskListsTableView.reloadData()
+        
     }
     
     
@@ -120,7 +147,7 @@ class TasksListViewController: UIViewController {
 extension TasksListViewController:UITableViewDelegate,UITableViewDataSource{
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return lists.count
+        return resultsList.count
     }
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return 1
@@ -128,7 +155,7 @@ extension TasksListViewController:UITableViewDelegate,UITableViewDataSource{
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell  = tableView.dequeueReusableCellWithIdentifier("taskList", forIndexPath: indexPath)
-        let list = lists[indexPath.row]
+        let list = resultsList[indexPath.row]
         
         cell.textLabel?.text = list.name
         cell.detailTextLabel?.text = "\(list.tasks.count) Tasks"
@@ -139,11 +166,11 @@ extension TasksListViewController:UITableViewDelegate,UITableViewDataSource{
     func tableView(tableView: UITableView, editActionsForRowAtIndexPath indexPath: NSIndexPath) -> [UITableViewRowAction]? {
         let editAction = UITableViewRowAction(style: UITableViewRowActionStyle.Normal, title: "Edit") { (_, index) -> Void in
             
-          self.displayAlertToAddTaskList(self.lists[index.row])
+          self.displayAlertToAddTaskList(self.resultsList[index.row])
         }
         let deleteAction = UITableViewRowAction(style: UITableViewRowActionStyle.Default, title: "Delete") { (_, index) -> Void in
            try!  uiRealm.write({ () -> Void in
-               uiRealm.delete(self.lists[index.row])
+               uiRealm.delete(self.resultsList[index.row])
                 self.updateUI()
              })
             
@@ -156,7 +183,7 @@ extension TasksListViewController:UITableViewDelegate,UITableViewDataSource{
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         
-        self.performSegueWithIdentifier("openTasks", sender: self.lists[indexPath.row])
+        self.performSegueWithIdentifier("openTasks", sender: self.resultsList[indexPath.row])
         
     }
     
@@ -169,12 +196,12 @@ extension TasksListViewController:UITableViewDelegate,UITableViewDataSource{
     
     @IBAction func Sorted(sender: UISegmentedControl) {
         if sender.selectedSegmentIndex == 0 {
-                self.lists =  self.lists.sorted("name",ascending: true )
+                self.resultsList =  self.resultsList.sorted("name",ascending: true )
 
            
         }else{
            
-               self.lists = self.lists.sorted("createdAt")
+               self.resultsList = self.resultsList.sorted("createdAt")
       
         }
          self.taskListsTableView.reloadData()
