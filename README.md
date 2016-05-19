@@ -5,3 +5,4 @@
 3. 添加仿微信的聊天界面 16/3/16
 4. 添加了一个PageViewDemo 16/4/17
 5. 添加了UIPickerView和UIDatePickerViewDemo 16/4/21
+6. 添加了左右侧滑的类似QQ的控件    16/5/19
