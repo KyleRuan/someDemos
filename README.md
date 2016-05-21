@@ -6,3 +6,4 @@
 4. 添加了一个PageViewDemo 16/4/17
 5. 添加了UIPickerView和UIDatePickerViewDemo 16/4/21
 6. 添加了左右侧滑的类似QQ的控件    16/5/19
+7. 添加了饼图和柱状图的画法，主要是Quratz2D 16/5/21
