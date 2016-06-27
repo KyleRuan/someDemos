@@ -30,13 +30,6 @@ class DrawPie: UIView {
     // Only override drawRect: if you perform custom drawing.
     // An empty implementation adversely affects performance during animation.
     override func drawRect(rect: CGRect) {
-        // Drawing code
-        // for test
-//        if dataSource.count == 0 {
-//            randonDataSource()
-//        }
-        
-        
         dataSource = CGFloat.randomCGFloat(5)
         
        let total = dataSource.reduce(0) { (res, d) -> CGFloat in
@@ -50,10 +43,6 @@ class DrawPie: UIView {
         
         
         let radius = min(self.frame.width/2, self.frame.height/2)
-        
-        
-       
-        
         for data in dataSource {
             
             endA = CGFloat(data)/total*CGFloat(2 * M_PI)+startA
@@ -66,9 +55,6 @@ class DrawPie: UIView {
             path.fill()
               startA = endA
         }
-        
-        
-        
     }
     
     override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
