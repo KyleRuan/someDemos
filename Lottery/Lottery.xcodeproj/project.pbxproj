@@ -1,0 +1,814 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B7291C851D24207D00B74E40 /* KRMyLotteryViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7291C841D24207D00B74E40 /* KRMyLotteryViewController.storyboard */; };
+		B7291C8B1D24BF8300B74E40 /* KRNewFeatureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7291C8A1D24BF8300B74E40 /* KRNewFeatureViewController.swift */; };
+		B7291C8F1D24E0E700B74E40 /* KRNewFeatureViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7291C8E1D24E0E700B74E40 /* KRNewFeatureViewCell.swift */; };
+		B7291C911D250DAC00B74E40 /* KRSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7291C901D250DAC00B74E40 /* KRSettingViewController.swift */; };
+		B7291C931D25485B00B74E40 /* KRSettingViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7291C921D25485B00B74E40 /* KRSettingViewCell.swift */; };
+		B7291C971D254D0A00B74E40 /* KRSettingItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7291C961D254D0A00B74E40 /* KRSettingItem.swift */; };
+		B7291C991D2573C800B74E40 /* KRSettingSectionGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7291C981D2573C800B74E40 /* KRSettingSectionGroup.swift */; };
+		B7291C9B1D257C2600B74E40 /* KRSettingArrowCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7291C9A1D257C2600B74E40 /* KRSettingArrowCell.swift */; };
+		B7291C9D1D257C6700B74E40 /* KRSettingSwitchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7291C9C1D257C6700B74E40 /* KRSettingSwitchCell.swift */; };
+		B7291CA11D257DD600B74E40 /* KRSettingSwitchItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7291CA01D257DD600B74E40 /* KRSettingSwitchItem.swift */; };
+		B7291CA31D26605200B74E40 /* KRHelpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7291CA21D26605200B74E40 /* KRHelpViewController.swift */; };
+		B7291CA51D26612C00B74E40 /* HelpItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7291CA41D26612C00B74E40 /* HelpItem.swift */; };
+		B7291CC51D2661FB00B74E40 /* help.json in Resources */ = {isa = PBXBuildFile; fileRef = B7291CA61D2661FB00B74E40 /* help.json */; };
+		B7291CC61D2661FB00B74E40 /* bjdc_howto.html in Resources */ = {isa = PBXBuildFile; fileRef = B7291CA81D2661FB00B74E40 /* bjdc_howto.html */; };
+		B7291CC71D2661FB00B74E40 /* coupon_help.html in Resources */ = {isa = PBXBuildFile; fileRef = B7291CA91D2661FB00B74E40 /* coupon_help.html */; };
+		B7291CC81D2661FB00B74E40 /* credit_help.html in Resources */ = {isa = PBXBuildFile; fileRef = B7291CAA1D2661FB00B74E40 /* credit_help.html */; };
+		B7291CC91D2661FB00B74E40 /* dlt_howto.html in Resources */ = {isa = PBXBuildFile; fileRef = B7291CAB1D2661FB00B74E40 /* dlt_howto.html */; };
+		B7291CCA1D2661FB00B74E40 /* f9_howto.html in Resources */ = {isa = PBXBuildFile; fileRef = B7291CAC1D2661FB00B74E40 /* f9_howto.html */; };
+		B7291CCB1D2661FB00B74E40 /* gdy11_howto.html in Resources */ = {isa = PBXBuildFile; fileRef = B7291CAD1D2661FB00B74E40 /* gdy11_howto.html */; };
+		B7291CCC1D2661FB00B74E40 /* group_record.html in Resources */ = {isa = PBXBuildFile; fileRef = B7291CAE1D2661FB00B74E40 /* group_record.html */; };
+		B7291CCD1D2661FB00B74E40 /* help.html in Resources */ = {isa = PBXBuildFile; fileRef = B7291CAF1D2661FB00B74E40 /* help.html */; };
+		B7291CCE1D2661FB00B74E40 /* helpGroupBuy.html in Resources */ = {isa = PBXBuildFile; fileRef = B7291CB01D2661FB00B74E40 /* helpGroupBuy.html */; };
+		B7291CCF1D2661FB00B74E40 /* jclq_howto.html in Resources */ = {isa = PBXBuildFile; fileRef = B7291CB11D2661FB00B74E40 /* jclq_howto.html */; };
+		B7291CD01D2661FB00B74E40 /* jczq_howto.html in Resources */ = {isa = PBXBuildFile; fileRef = B7291CB21D2661FB00B74E40 /* jczq_howto.html */; };
+		B7291CD11D2661FB00B74E40 /* jxssc_howto.html in Resources */ = {isa = PBXBuildFile; fileRef = B7291CB31D2661FB00B74E40 /* jxssc_howto.html */; };
+		B7291CD21D2661FB00B74E40 /* jxy11_howto.html in Resources */ = {isa = PBXBuildFile; fileRef = B7291CB41D2661FB00B74E40 /* jxy11_howto.html */; };
+		B7291CD31D2661FB00B74E40 /* k2_howto.html in Resources */ = {isa = PBXBuildFile; fileRef = B7291CB51D2661FB00B74E40 /* k2_howto.html */; };
+		B7291CD41D2661FB00B74E40 /* k3_howto.html in Resources */ = {isa = PBXBuildFile; fileRef = B7291CB61D2661FB00B74E40 /* k3_howto.html */; };
+		B7291CD51D2661FB00B74E40 /* kl8_howto.html in Resources */ = {isa = PBXBuildFile; fileRef = B7291CB71D2661FB00B74E40 /* kl8_howto.html */; };
+		B7291CD61D2661FB00B74E40 /* lk11_howto.html in Resources */ = {isa = PBXBuildFile; fileRef = B7291CB81D2661FB00B74E40 /* lk11_howto.html */; };
+		B7291CD71D2661FB00B74E40 /* networkconnectedfailed.html in Resources */ = {isa = PBXBuildFile; fileRef = B7291CB91D2661FB00B74E40 /* networkconnectedfailed.html */; };
+		B7291CD81D2661FB00B74E40 /* pl3_howto.html in Resources */ = {isa = PBXBuildFile; fileRef = B7291CBA1D2661FB00B74E40 /* pl3_howto.html */; };
+		B7291CD91D2661FB00B74E40 /* pl5_howto.html in Resources */ = {isa = PBXBuildFile; fileRef = B7291CBB1D2661FB00B74E40 /* pl5_howto.html */; };
+		B7291CDA1D2661FB00B74E40 /* qlc_howto.html in Resources */ = {isa = PBXBuildFile; fileRef = B7291CBC1D2661FB00B74E40 /* qlc_howto.html */; };
+		B7291CDB1D2661FB00B74E40 /* qxc_howto.html in Resources */ = {isa = PBXBuildFile; fileRef = B7291CBD1D2661FB00B74E40 /* qxc_howto.html */; };
+		B7291CDC1D2661FB00B74E40 /* rule.css in Resources */ = {isa = PBXBuildFile; fileRef = B7291CBE1D2661FB00B74E40 /* rule.css */; };
+		B7291CDD1D2661FB00B74E40 /* sfc_howto.html in Resources */ = {isa = PBXBuildFile; fileRef = B7291CBF1D2661FB00B74E40 /* sfc_howto.html */; };
+		B7291CDE1D2661FB00B74E40 /* ssc_howto.html in Resources */ = {isa = PBXBuildFile; fileRef = B7291CC01D2661FB00B74E40 /* ssc_howto.html */; };
+		B7291CDF1D2661FB00B74E40 /* ssq_howto.html in Resources */ = {isa = PBXBuildFile; fileRef = B7291CC11D2661FB00B74E40 /* ssq_howto.html */; };
+		B7291CE01D2661FB00B74E40 /* x3d_howto.html in Resources */ = {isa = PBXBuildFile; fileRef = B7291CC21D2661FB00B74E40 /* x3d_howto.html */; };
+		B7291CE11D2661FB00B74E40 /* y11_howto.html in Resources */ = {isa = PBXBuildFile; fileRef = B7291CC31D2661FB00B74E40 /* y11_howto.html */; };
+		B7291CE21D2661FB00B74E40 /* znzh.html in Resources */ = {isa = PBXBuildFile; fileRef = B7291CC41D2661FB00B74E40 /* znzh.html */; };
+		B7291CE41D26C55200B74E40 /* KRHelpHtmlViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7291CE31D26C55200B74E40 /* KRHelpHtmlViewController.swift */; };
+		B7D192581D21AF8100254A24 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7D192561D21AF8100254A24 /* Main.storyboard */; };
+		B7D1925A1D21AF8100254A24 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B7D192591D21AF8100254A24 /* Assets.xcassets */; };
+		B7D1925D1D21AF8100254A24 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7D1925B1D21AF8100254A24 /* LaunchScreen.storyboard */; };
+		B7D1927C1D22434C00254A24 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D1927B1D22434C00254A24 /* AppDelegate.swift */; };
+		B7D1927E1D2243B800254A24 /* KRTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D1927D1D2243B800254A24 /* KRTabBarController.swift */; };
+		B7D192801D224EED00254A24 /* KRDiscoverController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D1927F1D224EED00254A24 /* KRDiscoverController.swift */; };
+		B7D192821D224F1F00254A24 /* KRHallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D192811D224F1F00254A24 /* KRHallViewController.swift */; };
+		B7D192841D224F4A00254A24 /* KRHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D192831D224F4A00254A24 /* KRHistoryViewController.swift */; };
+		B7D1928E1D22502400254A24 /* KRMyLotteryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D1928D1D22502400254A24 /* KRMyLotteryViewController.swift */; };
+		B7D192901D2250A900254A24 /* SubControllerItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D1928F1D2250A900254A24 /* SubControllerItem.swift */; };
+		B7D192921D22536F00254A24 /* KRTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D192911D22536F00254A24 /* KRTabBarView.swift */; };
+		B7D192941D227B9700254A24 /* KRTabBarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D192931D227B9700254A24 /* KRTabBarButton.swift */; };
+		B7D192961D22823C00254A24 /* KRNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D192951D22823C00254A24 /* KRNavigationController.swift */; };
+		B7D192991D22B90A00254A24 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D192981D22B90A00254A24 /* UIImage+Extension.swift */; };
+		B7D1929B1D236F4000254A24 /* KRCoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D1929A1D236F4000254A24 /* KRCoverView.swift */; };
+		B7D1929D1D23763B00254A24 /* KRCoverContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D1929C1D23763B00254A24 /* KRCoverContentView.swift */; };
+		B7D192A01D23770D00254A24 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D1929F1D23770D00254A24 /* Constants.swift */; };
+		B7D192A21D23A89B00254A24 /* KRMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D192A11D23A89B00254A24 /* KRMessageView.swift */; };
+		B7D192A61D23AA5E00254A24 /* RKMessageItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D192A51D23AA5E00254A24 /* RKMessageItemModel.swift */; };
+		B7D192A81D23C1FF00254A24 /* KRArenaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D192A71D23C1FF00254A24 /* KRArenaViewController.swift */; };
+		B7D192AA1D23C69600254A24 /* KRArenaNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D192A91D23C69600254A24 /* KRArenaNavigationController.swift */; };
+		B7D192AC1D23CB1A00254A24 /* KRDiscoverController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7D192AB1D23CB1A00254A24 /* KRDiscoverController.storyboard */; };
+		B7D192B01D23D2FE00254A24 /* KRGroupBuyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D192AF1D23D2FE00254A24 /* KRGroupBuyViewController.swift */; };
+		B7D192B21D23D5B500254A24 /* KRGruopBuyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D192B11D23D5B500254A24 /* KRGruopBuyButton.swift */; };
+		B7D192B41D23F9D300254A24 /* KRLuckyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D192B31D23F9D300254A24 /* KRLuckyViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B7291C841D24207D00B74E40 /* KRMyLotteryViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = KRMyLotteryViewController.storyboard; sourceTree = "<group>"; };
+		B7291C8A1D24BF8300B74E40 /* KRNewFeatureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KRNewFeatureViewController.swift; sourceTree = "<group>"; };
+		B7291C8E1D24E0E700B74E40 /* KRNewFeatureViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KRNewFeatureViewCell.swift; sourceTree = "<group>"; };
+		B7291C901D250DAC00B74E40 /* KRSettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KRSettingViewController.swift; sourceTree = "<group>"; };
+		B7291C921D25485B00B74E40 /* KRSettingViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KRSettingViewCell.swift; path = ../Controller/KRSettingViewCell.swift; sourceTree = "<group>"; };
+		B7291C961D254D0A00B74E40 /* KRSettingItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KRSettingItem.swift; sourceTree = "<group>"; };
+		B7291C981D2573C800B74E40 /* KRSettingSectionGroup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KRSettingSectionGroup.swift; sourceTree = "<group>"; };
+		B7291C9A1D257C2600B74E40 /* KRSettingArrowCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KRSettingArrowCell.swift; sourceTree = "<group>"; };
+		B7291C9C1D257C6700B74E40 /* KRSettingSwitchCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KRSettingSwitchCell.swift; sourceTree = "<group>"; };
+		B7291CA01D257DD600B74E40 /* KRSettingSwitchItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KRSettingSwitchItem.swift; sourceTree = "<group>"; };
+		B7291CA21D26605200B74E40 /* KRHelpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KRHelpViewController.swift; sourceTree = "<group>"; };
+		B7291CA41D26612C00B74E40 /* HelpItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelpItem.swift; sourceTree = "<group>"; };
+		B7291CA61D2661FB00B74E40 /* help.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = help.json; sourceTree = "<group>"; };
+		B7291CA81D2661FB00B74E40 /* bjdc_howto.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = bjdc_howto.html; sourceTree = "<group>"; };
+		B7291CA91D2661FB00B74E40 /* coupon_help.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = coupon_help.html; sourceTree = "<group>"; };
+		B7291CAA1D2661FB00B74E40 /* credit_help.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = credit_help.html; sourceTree = "<group>"; };
+		B7291CAB1D2661FB00B74E40 /* dlt_howto.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = dlt_howto.html; sourceTree = "<group>"; };
+		B7291CAC1D2661FB00B74E40 /* f9_howto.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = f9_howto.html; sourceTree = "<group>"; };
+		B7291CAD1D2661FB00B74E40 /* gdy11_howto.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = gdy11_howto.html; sourceTree = "<group>"; };
+		B7291CAE1D2661FB00B74E40 /* group_record.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = group_record.html; sourceTree = "<group>"; };
+		B7291CAF1D2661FB00B74E40 /* help.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = help.html; sourceTree = "<group>"; };
+		B7291CB01D2661FB00B74E40 /* helpGroupBuy.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = helpGroupBuy.html; sourceTree = "<group>"; };
+		B7291CB11D2661FB00B74E40 /* jclq_howto.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = jclq_howto.html; sourceTree = "<group>"; };
+		B7291CB21D2661FB00B74E40 /* jczq_howto.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = jczq_howto.html; sourceTree = "<group>"; };
+		B7291CB31D2661FB00B74E40 /* jxssc_howto.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = jxssc_howto.html; sourceTree = "<group>"; };
+		B7291CB41D2661FB00B74E40 /* jxy11_howto.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = jxy11_howto.html; sourceTree = "<group>"; };
+		B7291CB51D2661FB00B74E40 /* k2_howto.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = k2_howto.html; sourceTree = "<group>"; };
+		B7291CB61D2661FB00B74E40 /* k3_howto.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = k3_howto.html; sourceTree = "<group>"; };
+		B7291CB71D2661FB00B74E40 /* kl8_howto.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = kl8_howto.html; sourceTree = "<group>"; };
+		B7291CB81D2661FB00B74E40 /* lk11_howto.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = lk11_howto.html; sourceTree = "<group>"; };
+		B7291CB91D2661FB00B74E40 /* networkconnectedfailed.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = networkconnectedfailed.html; sourceTree = "<group>"; };
+		B7291CBA1D2661FB00B74E40 /* pl3_howto.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = pl3_howto.html; sourceTree = "<group>"; };
+		B7291CBB1D2661FB00B74E40 /* pl5_howto.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = pl5_howto.html; sourceTree = "<group>"; };
+		B7291CBC1D2661FB00B74E40 /* qlc_howto.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = qlc_howto.html; sourceTree = "<group>"; };
+		B7291CBD1D2661FB00B74E40 /* qxc_howto.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = qxc_howto.html; sourceTree = "<group>"; };
+		B7291CBE1D2661FB00B74E40 /* rule.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = rule.css; sourceTree = "<group>"; };
+		B7291CBF1D2661FB00B74E40 /* sfc_howto.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = sfc_howto.html; sourceTree = "<group>"; };
+		B7291CC01D2661FB00B74E40 /* ssc_howto.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = ssc_howto.html; sourceTree = "<group>"; };
+		B7291CC11D2661FB00B74E40 /* ssq_howto.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = ssq_howto.html; sourceTree = "<group>"; };
+		B7291CC21D2661FB00B74E40 /* x3d_howto.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = x3d_howto.html; sourceTree = "<group>"; };
+		B7291CC31D2661FB00B74E40 /* y11_howto.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = y11_howto.html; sourceTree = "<group>"; };
+		B7291CC41D2661FB00B74E40 /* znzh.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = znzh.html; sourceTree = "<group>"; };
+		B7291CE31D26C55200B74E40 /* KRHelpHtmlViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KRHelpHtmlViewController.swift; sourceTree = "<group>"; };
+		B7D1924F1D21AF8100254A24 /* Lottery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lottery.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7D192571D21AF8100254A24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B7D192591D21AF8100254A24 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B7D1925C1D21AF8100254A24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B7D1925E1D21AF8100254A24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B7D1927B1D22434C00254A24 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B7D1927D1D2243B800254A24 /* KRTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KRTabBarController.swift; sourceTree = "<group>"; };
+		B7D1927F1D224EED00254A24 /* KRDiscoverController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KRDiscoverController.swift; sourceTree = "<group>"; };
+		B7D192811D224F1F00254A24 /* KRHallViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KRHallViewController.swift; sourceTree = "<group>"; };
+		B7D192831D224F4A00254A24 /* KRHistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KRHistoryViewController.swift; sourceTree = "<group>"; };
+		B7D1928D1D22502400254A24 /* KRMyLotteryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KRMyLotteryViewController.swift; sourceTree = "<group>"; };
+		B7D1928F1D2250A900254A24 /* SubControllerItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubControllerItem.swift; sourceTree = "<group>"; };
+		B7D192911D22536F00254A24 /* KRTabBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KRTabBarView.swift; sourceTree = "<group>"; };
+		B7D192931D227B9700254A24 /* KRTabBarButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KRTabBarButton.swift; sourceTree = "<group>"; };
+		B7D192951D22823C00254A24 /* KRNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KRNavigationController.swift; sourceTree = "<group>"; };
+		B7D192981D22B90A00254A24 /* UIImage+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
+		B7D1929A1D236F4000254A24 /* KRCoverView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KRCoverView.swift; sourceTree = "<group>"; };
+		B7D1929C1D23763B00254A24 /* KRCoverContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KRCoverContentView.swift; sourceTree = "<group>"; };
+		B7D1929F1D23770D00254A24 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		B7D192A11D23A89B00254A24 /* KRMessageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KRMessageView.swift; sourceTree = "<group>"; };
+		B7D192A51D23AA5E00254A24 /* RKMessageItemModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RKMessageItemModel.swift; sourceTree = "<group>"; };
+		B7D192A71D23C1FF00254A24 /* KRArenaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KRArenaViewController.swift; sourceTree = "<group>"; };
+		B7D192A91D23C69600254A24 /* KRArenaNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KRArenaNavigationController.swift; sourceTree = "<group>"; };
+		B7D192AB1D23CB1A00254A24 /* KRDiscoverController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = KRDiscoverController.storyboard; sourceTree = "<group>"; };
+		B7D192AF1D23D2FE00254A24 /* KRGroupBuyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KRGroupBuyViewController.swift; sourceTree = "<group>"; };
+		B7D192B11D23D5B500254A24 /* KRGruopBuyButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KRGruopBuyButton.swift; sourceTree = "<group>"; };
+		B7D192B31D23F9D300254A24 /* KRLuckyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KRLuckyViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B7D1924C1D21AF8100254A24 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B7291C861D24BB7500B74E40 /* NewFeature */ = {
+			isa = PBXGroup;
+			children = (
+				B7291C871D24BB7500B74E40 /* Controller */,
+				B7291C881D24BB7500B74E40 /* Model */,
+				B7291C891D24BB7500B74E40 /* View */,
+			);
+			path = NewFeature;
+			sourceTree = "<group>";
+		};
+		B7291C871D24BB7500B74E40 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B7291C8A1D24BF8300B74E40 /* KRNewFeatureViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B7291C881D24BB7500B74E40 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B7291C891D24BB7500B74E40 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B7291C8E1D24E0E700B74E40 /* KRNewFeatureViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B7291CA71D2661FB00B74E40 /* Html */ = {
+			isa = PBXGroup;
+			children = (
+				B7291CA81D2661FB00B74E40 /* bjdc_howto.html */,
+				B7291CA91D2661FB00B74E40 /* coupon_help.html */,
+				B7291CAA1D2661FB00B74E40 /* credit_help.html */,
+				B7291CAB1D2661FB00B74E40 /* dlt_howto.html */,
+				B7291CAC1D2661FB00B74E40 /* f9_howto.html */,
+				B7291CAD1D2661FB00B74E40 /* gdy11_howto.html */,
+				B7291CAE1D2661FB00B74E40 /* group_record.html */,
+				B7291CAF1D2661FB00B74E40 /* help.html */,
+				B7291CB01D2661FB00B74E40 /* helpGroupBuy.html */,
+				B7291CB11D2661FB00B74E40 /* jclq_howto.html */,
+				B7291CB21D2661FB00B74E40 /* jczq_howto.html */,
+				B7291CB31D2661FB00B74E40 /* jxssc_howto.html */,
+				B7291CB41D2661FB00B74E40 /* jxy11_howto.html */,
+				B7291CB51D2661FB00B74E40 /* k2_howto.html */,
+				B7291CB61D2661FB00B74E40 /* k3_howto.html */,
+				B7291CB71D2661FB00B74E40 /* kl8_howto.html */,
+				B7291CB81D2661FB00B74E40 /* lk11_howto.html */,
+				B7291CB91D2661FB00B74E40 /* networkconnectedfailed.html */,
+				B7291CBA1D2661FB00B74E40 /* pl3_howto.html */,
+				B7291CBB1D2661FB00B74E40 /* pl5_howto.html */,
+				B7291CBC1D2661FB00B74E40 /* qlc_howto.html */,
+				B7291CBD1D2661FB00B74E40 /* qxc_howto.html */,
+				B7291CBE1D2661FB00B74E40 /* rule.css */,
+				B7291CBF1D2661FB00B74E40 /* sfc_howto.html */,
+				B7291CC01D2661FB00B74E40 /* ssc_howto.html */,
+				B7291CC11D2661FB00B74E40 /* ssq_howto.html */,
+				B7291CC21D2661FB00B74E40 /* x3d_howto.html */,
+				B7291CC31D2661FB00B74E40 /* y11_howto.html */,
+				B7291CC41D2661FB00B74E40 /* znzh.html */,
+			);
+			path = Html;
+			sourceTree = "<group>";
+		};
+		B7D192461D21AF8100254A24 = {
+			isa = PBXGroup;
+			children = (
+				B7D192511D21AF8100254A24 /* Lottery */,
+				B7D192501D21AF8100254A24 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B7D192501D21AF8100254A24 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B7D1924F1D21AF8100254A24 /* Lottery.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B7D192511D21AF8100254A24 /* Lottery */ = {
+			isa = PBXGroup;
+			children = (
+				B7D192651D22434C00254A24 /* Classes */,
+				B7D192561D21AF8100254A24 /* Main.storyboard */,
+				B7D192591D21AF8100254A24 /* Assets.xcassets */,
+				B7D1925B1D21AF8100254A24 /* LaunchScreen.storyboard */,
+				B7D1925E1D21AF8100254A24 /* Info.plist */,
+				B7291CA61D2661FB00B74E40 /* help.json */,
+				B7291CA71D2661FB00B74E40 /* Html */,
+			);
+			path = Lottery;
+			sourceTree = "<group>";
+		};
+		B7D192651D22434C00254A24 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				B7291C861D24BB7500B74E40 /* NewFeature */,
+				B7D1929E1D2376FA00254A24 /* Helper */,
+				B7D192971D22B8E800254A24 /* extension */,
+				B7D192871D224FFB00254A24 /* MyLottery(我的彩票) */,
+				B7D192661D22434C00254A24 /* Arena(竞技场) */,
+				B7D1926A1D22434C00254A24 /* Discover(发现) */,
+				B7D1926E1D22434C00254A24 /* Hall(购彩大厅) */,
+				B7D192721D22434C00254A24 /* History(开奖信息) */,
+				B7D192761D22434C00254A24 /* Main(主要) */,
+				B7D1927A1D22434C00254A24 /* Others */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		B7D192661D22434C00254A24 /* Arena(竞技场) */ = {
+			isa = PBXGroup;
+			children = (
+				B7D192671D22434C00254A24 /* Controller */,
+				B7D192681D22434C00254A24 /* Model */,
+				B7D192691D22434C00254A24 /* View */,
+			);
+			path = "Arena(竞技场)";
+			sourceTree = "<group>";
+		};
+		B7D192671D22434C00254A24 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B7D192A71D23C1FF00254A24 /* KRArenaViewController.swift */,
+				B7D192A91D23C69600254A24 /* KRArenaNavigationController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B7D192681D22434C00254A24 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B7D192691D22434C00254A24 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B7D1926A1D22434C00254A24 /* Discover(发现) */ = {
+			isa = PBXGroup;
+			children = (
+				B7D1926B1D22434C00254A24 /* Controller */,
+				B7D1926C1D22434C00254A24 /* Model */,
+				B7D1926D1D22434C00254A24 /* View */,
+			);
+			path = "Discover(发现)";
+			sourceTree = "<group>";
+		};
+		B7D1926B1D22434C00254A24 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B7D1927F1D224EED00254A24 /* KRDiscoverController.swift */,
+				B7D192AF1D23D2FE00254A24 /* KRGroupBuyViewController.swift */,
+				B7D192B31D23F9D300254A24 /* KRLuckyViewController.swift */,
+				B7D192AB1D23CB1A00254A24 /* KRDiscoverController.storyboard */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B7D1926C1D22434C00254A24 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B7D1926D1D22434C00254A24 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B7D192B11D23D5B500254A24 /* KRGruopBuyButton.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B7D1926E1D22434C00254A24 /* Hall(购彩大厅) */ = {
+			isa = PBXGroup;
+			children = (
+				B7D1926F1D22434C00254A24 /* Controller */,
+				B7D192701D22434C00254A24 /* Model */,
+				B7D192711D22434C00254A24 /* View */,
+			);
+			path = "Hall(购彩大厅)";
+			sourceTree = "<group>";
+		};
+		B7D1926F1D22434C00254A24 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B7D192811D224F1F00254A24 /* KRHallViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B7D192701D22434C00254A24 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B7D192A51D23AA5E00254A24 /* RKMessageItemModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B7D192711D22434C00254A24 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B7D1929A1D236F4000254A24 /* KRCoverView.swift */,
+				B7D1929C1D23763B00254A24 /* KRCoverContentView.swift */,
+				B7D192A11D23A89B00254A24 /* KRMessageView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B7D192721D22434C00254A24 /* History(开奖信息) */ = {
+			isa = PBXGroup;
+			children = (
+				B7D192731D22434C00254A24 /* Controller */,
+				B7D192741D22434C00254A24 /* Model */,
+				B7D192751D22434C00254A24 /* View */,
+			);
+			path = "History(开奖信息)";
+			sourceTree = "<group>";
+		};
+		B7D192731D22434C00254A24 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B7D192831D224F4A00254A24 /* KRHistoryViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B7D192741D22434C00254A24 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B7D192751D22434C00254A24 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B7D192761D22434C00254A24 /* Main(主要) */ = {
+			isa = PBXGroup;
+			children = (
+				B7D192771D22434C00254A24 /* Controller */,
+				B7D192781D22434C00254A24 /* Model */,
+				B7D192791D22434C00254A24 /* View */,
+			);
+			path = "Main(主要)";
+			sourceTree = "<group>";
+		};
+		B7D192771D22434C00254A24 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B7D1927D1D2243B800254A24 /* KRTabBarController.swift */,
+				B7D192951D22823C00254A24 /* KRNavigationController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B7D192781D22434C00254A24 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B7D1928F1D2250A900254A24 /* SubControllerItem.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B7D192791D22434C00254A24 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B7D192911D22536F00254A24 /* KRTabBarView.swift */,
+				B7D192931D227B9700254A24 /* KRTabBarButton.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B7D1927A1D22434C00254A24 /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				B7D1927B1D22434C00254A24 /* AppDelegate.swift */,
+			);
+			path = Others;
+			sourceTree = "<group>";
+		};
+		B7D192871D224FFB00254A24 /* MyLottery(我的彩票) */ = {
+			isa = PBXGroup;
+			children = (
+				B7D192881D224FFB00254A24 /* Controller */,
+				B7D1928A1D224FFB00254A24 /* Model */,
+				B7D1928B1D224FFB00254A24 /* View */,
+			);
+			path = "MyLottery(我的彩票)";
+			sourceTree = "<group>";
+		};
+		B7D192881D224FFB00254A24 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B7D1928D1D22502400254A24 /* KRMyLotteryViewController.swift */,
+				B7291C841D24207D00B74E40 /* KRMyLotteryViewController.storyboard */,
+				B7291C901D250DAC00B74E40 /* KRSettingViewController.swift */,
+				B7291CA21D26605200B74E40 /* KRHelpViewController.swift */,
+				B7291CE31D26C55200B74E40 /* KRHelpHtmlViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B7D1928A1D224FFB00254A24 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B7291C961D254D0A00B74E40 /* KRSettingItem.swift */,
+				B7291CA01D257DD600B74E40 /* KRSettingSwitchItem.swift */,
+				B7291C981D2573C800B74E40 /* KRSettingSectionGroup.swift */,
+				B7291CA41D26612C00B74E40 /* HelpItem.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B7D1928B1D224FFB00254A24 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B7291C921D25485B00B74E40 /* KRSettingViewCell.swift */,
+				B7291C9A1D257C2600B74E40 /* KRSettingArrowCell.swift */,
+				B7291C9C1D257C6700B74E40 /* KRSettingSwitchCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B7D192971D22B8E800254A24 /* extension */ = {
+			isa = PBXGroup;
+			children = (
+				B7D192981D22B90A00254A24 /* UIImage+Extension.swift */,
+			);
+			path = extension;
+			sourceTree = "<group>";
+		};
+		B7D1929E1D2376FA00254A24 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				B7D1929F1D23770D00254A24 /* Constants.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B7D1924E1D21AF8100254A24 /* Lottery */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B7D192611D21AF8100254A24 /* Build configuration list for PBXNativeTarget "Lottery" */;
+			buildPhases = (
+				B7D1924B1D21AF8100254A24 /* Sources */,
+				B7D1924C1D21AF8100254A24 /* Frameworks */,
+				B7D1924D1D21AF8100254A24 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Lottery;
+			productName = Lottery;
+			productReference = B7D1924F1D21AF8100254A24 /* Lottery.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B7D192471D21AF8100254A24 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = KR;
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = com.io.github.kyleruan;
+				TargetAttributes = {
+					B7D1924E1D21AF8100254A24 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = F98L43TZJ8;
+					};
+				};
+			};
+			buildConfigurationList = B7D1924A1D21AF8100254A24 /* Build configuration list for PBXProject "Lottery" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B7D192461D21AF8100254A24;
+			productRefGroup = B7D192501D21AF8100254A24 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B7D1924E1D21AF8100254A24 /* Lottery */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B7D1924D1D21AF8100254A24 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7291CD01D2661FB00B74E40 /* jczq_howto.html in Resources */,
+				B7291CDB1D2661FB00B74E40 /* qxc_howto.html in Resources */,
+				B7291CD31D2661FB00B74E40 /* k2_howto.html in Resources */,
+				B7D1925D1D21AF8100254A24 /* LaunchScreen.storyboard in Resources */,
+				B7291CE21D2661FB00B74E40 /* znzh.html in Resources */,
+				B7291CD81D2661FB00B74E40 /* pl3_howto.html in Resources */,
+				B7291CCD1D2661FB00B74E40 /* help.html in Resources */,
+				B7291CDA1D2661FB00B74E40 /* qlc_howto.html in Resources */,
+				B7291CDC1D2661FB00B74E40 /* rule.css in Resources */,
+				B7291CD51D2661FB00B74E40 /* kl8_howto.html in Resources */,
+				B7291C851D24207D00B74E40 /* KRMyLotteryViewController.storyboard in Resources */,
+				B7291CC61D2661FB00B74E40 /* bjdc_howto.html in Resources */,
+				B7291CD91D2661FB00B74E40 /* pl5_howto.html in Resources */,
+				B7291CD21D2661FB00B74E40 /* jxy11_howto.html in Resources */,
+				B7291CD71D2661FB00B74E40 /* networkconnectedfailed.html in Resources */,
+				B7D1925A1D21AF8100254A24 /* Assets.xcassets in Resources */,
+				B7D192AC1D23CB1A00254A24 /* KRDiscoverController.storyboard in Resources */,
+				B7291CE11D2661FB00B74E40 /* y11_howto.html in Resources */,
+				B7291CCB1D2661FB00B74E40 /* gdy11_howto.html in Resources */,
+				B7291CD61D2661FB00B74E40 /* lk11_howto.html in Resources */,
+				B7291CC51D2661FB00B74E40 /* help.json in Resources */,
+				B7291CDD1D2661FB00B74E40 /* sfc_howto.html in Resources */,
+				B7291CC81D2661FB00B74E40 /* credit_help.html in Resources */,
+				B7291CCC1D2661FB00B74E40 /* group_record.html in Resources */,
+				B7291CD41D2661FB00B74E40 /* k3_howto.html in Resources */,
+				B7291CC91D2661FB00B74E40 /* dlt_howto.html in Resources */,
+				B7291CDF1D2661FB00B74E40 /* ssq_howto.html in Resources */,
+				B7291CE01D2661FB00B74E40 /* x3d_howto.html in Resources */,
+				B7D192581D21AF8100254A24 /* Main.storyboard in Resources */,
+				B7291CDE1D2661FB00B74E40 /* ssc_howto.html in Resources */,
+				B7291CCF1D2661FB00B74E40 /* jclq_howto.html in Resources */,
+				B7291CCE1D2661FB00B74E40 /* helpGroupBuy.html in Resources */,
+				B7291CC71D2661FB00B74E40 /* coupon_help.html in Resources */,
+				B7291CD11D2661FB00B74E40 /* jxssc_howto.html in Resources */,
+				B7291CCA1D2661FB00B74E40 /* f9_howto.html in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B7D1924B1D21AF8100254A24 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7291CE41D26C55200B74E40 /* KRHelpHtmlViewController.swift in Sources */,
+				B7D192941D227B9700254A24 /* KRTabBarButton.swift in Sources */,
+				B7291CA51D26612C00B74E40 /* HelpItem.swift in Sources */,
+				B7291C991D2573C800B74E40 /* KRSettingSectionGroup.swift in Sources */,
+				B7291C9D1D257C6700B74E40 /* KRSettingSwitchCell.swift in Sources */,
+				B7D192A81D23C1FF00254A24 /* KRArenaViewController.swift in Sources */,
+				B7D1929B1D236F4000254A24 /* KRCoverView.swift in Sources */,
+				B7D192B21D23D5B500254A24 /* KRGruopBuyButton.swift in Sources */,
+				B7291C8B1D24BF8300B74E40 /* KRNewFeatureViewController.swift in Sources */,
+				B7291CA31D26605200B74E40 /* KRHelpViewController.swift in Sources */,
+				B7D192B41D23F9D300254A24 /* KRLuckyViewController.swift in Sources */,
+				B7D1928E1D22502400254A24 /* KRMyLotteryViewController.swift in Sources */,
+				B7D192A61D23AA5E00254A24 /* RKMessageItemModel.swift in Sources */,
+				B7D1929D1D23763B00254A24 /* KRCoverContentView.swift in Sources */,
+				B7D192841D224F4A00254A24 /* KRHistoryViewController.swift in Sources */,
+				B7291C971D254D0A00B74E40 /* KRSettingItem.swift in Sources */,
+				B7D192A01D23770D00254A24 /* Constants.swift in Sources */,
+				B7D192991D22B90A00254A24 /* UIImage+Extension.swift in Sources */,
+				B7D192801D224EED00254A24 /* KRDiscoverController.swift in Sources */,
+				B7D192B01D23D2FE00254A24 /* KRGroupBuyViewController.swift in Sources */,
+				B7D1927E1D2243B800254A24 /* KRTabBarController.swift in Sources */,
+				B7D192821D224F1F00254A24 /* KRHallViewController.swift in Sources */,
+				B7D192A21D23A89B00254A24 /* KRMessageView.swift in Sources */,
+				B7D1927C1D22434C00254A24 /* AppDelegate.swift in Sources */,
+				B7291CA11D257DD600B74E40 /* KRSettingSwitchItem.swift in Sources */,
+				B7291C911D250DAC00B74E40 /* KRSettingViewController.swift in Sources */,
+				B7291C8F1D24E0E700B74E40 /* KRNewFeatureViewCell.swift in Sources */,
+				B7D192901D2250A900254A24 /* SubControllerItem.swift in Sources */,
+				B7D192961D22823C00254A24 /* KRNavigationController.swift in Sources */,
+				B7291C931D25485B00B74E40 /* KRSettingViewCell.swift in Sources */,
+				B7291C9B1D257C2600B74E40 /* KRSettingArrowCell.swift in Sources */,
+				B7D192AA1D23C69600254A24 /* KRArenaNavigationController.swift in Sources */,
+				B7D192921D22536F00254A24 /* KRTabBarView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B7D192561D21AF8100254A24 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B7D192571D21AF8100254A24 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B7D1925B1D21AF8100254A24 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B7D1925C1D21AF8100254A24 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B7D1925F1D21AF8100254A24 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B7D192601D21AF8100254A24 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B7D192621D21AF8100254A24 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				INFOPLIST_FILE = Lottery/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = RuanKai.Lottery;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B7D192631D21AF8100254A24 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				INFOPLIST_FILE = Lottery/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = RuanKai.Lottery;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B7D1924A1D21AF8100254A24 /* Build configuration list for PBXProject "Lottery" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B7D1925F1D21AF8100254A24 /* Debug */,
+				B7D192601D21AF8100254A24 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B7D192611D21AF8100254A24 /* Build configuration list for PBXNativeTarget "Lottery" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B7D192621D21AF8100254A24 /* Debug */,
+				B7D192631D21AF8100254A24 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B7D192471D21AF8100254A24 /* Project object */;
+}
